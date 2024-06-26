@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react'
-// import Select from 'react-select'
+import React, { useState } from 'react'
 import './Converter.css'
 import { Heading } from './../Heading/Heading'
 import { ConverterFields } from './../ConverterFields/ConverterFields'
