@@ -44,7 +44,7 @@ export const ConverterFields = ({ setResult }) => {
   }, [currency]);
 
   useEffect(() => {
-    setResult(new Intl.NumberFormat("ru-RU").format((+input * rate).toFixed(2)));
+    setResult(new Intl.NumberFormat("ru-RU").format((+input * rate).toFixed(2)), currency.currency2);
   }, [input, rate, setResult]);
 
 

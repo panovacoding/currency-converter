@@ -7,7 +7,7 @@ export const fetchData = async (baseCurrency, currency2, input, setResult, setRa
       );
       if(res.ok && setRate && setResult) {
         const result = await res.json();
-        setResult((+input * result.data[currency2]).toFixed(2));
+        setResult((+input * result.data[currency2]).toFixed(2), currency2);
         setRate(result.data[currency2]);
         const currencies = Object.keys(result.data);
         const options = currencies.map((el) => ({value: el, label: el}))
